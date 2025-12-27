@@ -66,7 +66,7 @@ function Drone.New(player: Player, data: DroneSettings)
 	self.Owner = player
 	self.Config = data or DefaultSettings
 	self.Heartbeat = nil
-	self.LastFire = 10
+	self.LastFire = 0
 	self.connections = {}
 	
 	-- // Create the drone model
